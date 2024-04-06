@@ -57,11 +57,14 @@
                     <div class="is-size-5 publication-authors">
                         <!-- Paper authors -->
                         <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=ufvAmAIAAAAJ&hl=en" target="_blank">Duy-Tho Le</a><sup>*</sup>,</span>
+                    <a href="https://scholar.google.com/citations?user=ufvAmAIAAAAJ&hl=en"
+                       target="_blank">Duy-Tho Le</a><sup>*</sup>,</span>
                         <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=KcPnbLoAAAAJ&hl=EN" target="_blank">Hengcan Shi</a>,</span>
+                    <a href="https://scholar.google.com/citations?user=KcPnbLoAAAAJ&hl=EN"
+                       target="_blank">Hengcan Shi</a>,</span>
                         <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=N6czCoUAAAAJ&hl=en" target="_blank">Jianfei Cai</a>
+                    <a href="https://scholar.google.com/citations?user=N6czCoUAAAAJ&hl=en"
+                       target="_blank">Jianfei Cai</a>
                     </span>
                         <span class="author-block">
                     <a href="https://scholar.google.com.au/citations?user=VxAuxMwAAAAJ&hl=en" target="_blank">Hamid Rezatofighi</a>
@@ -70,35 +73,35 @@
 
                     <div class="is-size-5 publication-authors">
                         <span class="author-block">Monash University
-<!--                            <br>-->
-<!--                            Conferance name and year</span>-->
-<!--                        <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small>-->
+                            <!--                            <br>-->
+                            <!--                            Conferance name and year</span>-->
+                            <!--                        <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small>-->
                         </span>
                     </div>
 
                     <div class="column has-text-centered">
                         <div class="publication-links">
                             <!-- Arxiv PDF link -->
-<!--                            <span class="link-block">-->
-<!--                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"-->
-<!--                           class="external-link button is-normal is-rounded is-dark">-->
-<!--                        <span class="icon">-->
-<!--                          <i class="fas fa-file-pdf"></i>-->
-<!--                        </span>-->
-<!--                        <span>Paper</span>-->
-<!--                      </a>-->
-<!--                    </span>-->
+                            <!--                            <span class="link-block">-->
+                            <!--                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"-->
+                            <!--                           class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                        <span class="icon">-->
+                            <!--                          <i class="fas fa-file-pdf"></i>-->
+                            <!--                        </span>-->
+                            <!--                        <span>Paper</span>-->
+                            <!--                      </a>-->
+                            <!--                    </span>-->
 
-<!--                            &lt;!&ndash; Supplementary PDF link &ndash;&gt;-->
-<!--                            <span class="link-block">-->
-<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
-<!--                         class="external-link button is-normal is-rounded is-dark">-->
-<!--                      <span class="icon">-->
-<!--                        <i class="fas fa-file-pdf"></i>-->
-<!--                      </span>-->
-<!--                      <span>Supplementary</span>-->
-<!--                    </a>-->
-<!--                  </span>-->
+                            <!--                            &lt;!&ndash; Supplementary PDF link &ndash;&gt;-->
+                            <!--                            <span class="link-block">-->
+                            <!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+                            <!--                         class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                      <span class="icon">-->
+                            <!--                        <i class="fas fa-file-pdf"></i>-->
+                            <!--                      </span>-->
+                            <!--                      <span>Supplementary</span>-->
+                            <!--                    </a>-->
+                            <!--                  </span>-->
 
                             <!-- Github link -->
                             <span class="link-block">
@@ -135,7 +138,9 @@
     <div class="container is-max-desktop">
         <div class="hero-body">
             <img src="static/images/thumbnail.png">
-            <h2 class="title is-3">We propose to formulate multi-modal fusion as a denoising diffusion process from noisy to refined BEV features, which are then fed into task-specific heads for 3D object detection and BEV map segmentation.</h2>
+            <h3 class="title is-3">We propose to formulate multi-modal fusion as a denoising diffusion process from
+                noisy to refined BEV features, which are then fed into task-specific heads for 3D object detection and
+                BEV map segmentation.</h3>
         </div>
     </div>
 </section>
@@ -149,12 +154,20 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante
-                        aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec
-                        accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus
-                        euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac
-                        purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo.
-                        Pellentesque auctor leo vitae sagittis suscipit.
+                        Diffusion models have recently gained prominence as powerful deep generative models,
+                        demonstrating unmatched performance across various domains. However, their potential in
+                        multi-sensor fusion remains largely unexplored. In this work, we introduce ``DifFUSER'', a novel
+                        approach that leverages diffusion models for multi-modal fusion in 3D object detection and BEV
+                        map segmentation. Benefiting from the inherent denoising property of diffusion, DifFUSER is able
+                        to refine or even synthesize sensor features in case of sensor malfunction, thereby improving
+                        the quality of the fused output. In terms of architecture, our DifFUSER blocks are chained
+                        together in a hierarchical BiFPN fashion, termed cMini-BiFPN, offering an alternative
+                        architecture for latent diffusion. We further introduce a Gated Self-conditioned Modulated (GSM)
+                        latent diffusion module together with a Progressive Sensor Dropout Training (PSDT) paradigm,
+                        designed to add stronger conditioning to the diffusion process and robustness to sensor
+                        failures. Our extensive evaluations on the Nuscenes dataset reveal that DifFUSER not only
+                        achieves state-of-the-art performance with a 69.1% mIOU in BEV map segmentation tasks but also
+                        competes effectively with leading transformer-based fusion techniques in 3D object detection.
                     </p>
                 </div>
             </div>
@@ -167,35 +180,35 @@
 <!-- Image carousel -->
 <section class="hero is-small">
     <div class="hero-body">
+        <img src="static/images/supp/legend.png">
         <div class="container">
             <div id="results-carousel" class="carousel results-carousel">
                 <div class="item">
-                    <!-- Your image here -->
-                    <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-                    <h2 class="subtitle has-text-centered">
-                        First image description.
-                    </h2>
+                    <img src="static/images/supp/1.png" alt="MY ALT TEXT"/>
                 </div>
                 <div class="item">
-                    <!-- Your image here -->
-                    <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-                    <h2 class="subtitle has-text-centered">
-                        Second image description.
-                    </h2>
+                    <img src="static/images/supp/2.png" alt="MY ALT TEXT"/>
                 </div>
                 <div class="item">
-                    <!-- Your image here -->
-                    <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-                    <h2 class="subtitle has-text-centered">
-                        Third image description.
-                    </h2>
+                    <img src="static/images/supp/3.png" alt="MY ALT TEXT"/>
                 </div>
                 <div class="item">
-                    <!-- Your image here -->
-                    <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-                    <h2 class="subtitle has-text-centered">
-                        Fourth image description.
-                    </h2>
+                    <img src="static/images/supp/4.png" alt="MY ALT TEXT"/>
+                </div>
+                <div class="item">
+                    <img src="static/images/supp/5.png" alt="MY ALT TEXT"/>
+                </div>
+                <div class="item">
+                    <img src="static/images/supp/6.png" alt="MY ALT TEXT"/>
+                </div>
+                <div class="item">
+                    <img src="static/images/supp/7.png" alt="MY ALT TEXT"/>
+                </div>
+                <div class="item">
+                    <img src="static/images/supp/8.png" alt="MY ALT TEXT"/>
+                </div>
+                <div class="item">
+                    <img src="static/images/supp/9.png" alt="MY ALT TEXT"/>
                 </div>
             </div>
         </div>
