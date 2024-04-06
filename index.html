@@ -144,8 +144,11 @@
                                 type="video/mp4">
                     </video>
                 </div>
-                <div class="content fa-align-center">
-                    Qualitative results of our DifFUSER on the NuScenes dataset.
+                <div class="columns is-centered">
+                    <!-- Wrap the text inside a .column and potentially use .has-text-centered for text alignment -->
+                    <div class="column has-text-centered">
+                        Qualitative results of our DifFUSER on the NuScenes dataset.
+                    </div>
                 </div>
         </div>
     </div>
@@ -156,14 +159,19 @@
 <!-- Teaser video-->
 <section class="hero teaser">
     <div class="container is-max-desktop">
-        <div class="hero-body">
-            <img src="static/images/thumbnail.png">
-            <h3 class="title fa-align-center is-3">We propose to formulate multi-modal fusion as a denoising diffusion process from
+        <div class="hero-body has-text-centered"> <!-- Add has-text-centered here to center all text within -->
+            <figure class="image is-inline-block"> <!-- Wrap your image in a figure for better alignment -->
+                <img src="static/images/thumbnail.png" style="display:block; margin:auto;"> <!-- Ensure the image is centered -->
+            </figure>
+            <h3 class="title is-3" style="margin-top: 20px;"> <!-- Additional styles for spacing and alignment -->
+                We propose to formulate multi-modal fusion as a denoising diffusion process from
                 noisy to refined BEV features, which are then fed into task-specific heads for 3D object detection and
-                BEV map segmentation.</h3>
+                BEV map segmentation.
+            </h3>
         </div>
     </div>
 </section>
+
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
