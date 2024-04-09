@@ -65,7 +65,7 @@
                         <span class="author-block">
                     <a href="https://scholar.google.com/citations?user=N6czCoUAAAAJ&hl=en"
                        target="_blank">Jianfei Cai</a>,</span>
-                    </span>
+                        </span>
                         <span class="author-block">
                     <a href="https://scholar.google.com.au/citations?user=VxAuxMwAAAAJ&hl=en" target="_blank">Hamid Rezatofighi</a>
                   </span>
@@ -81,30 +81,30 @@
 
                     <div class="column has-text-centered">
                         <div class="publication-links">
-                            <!-- Arxiv PDF link -->
-                            <!--                            <span class="link-block">-->
-                            <!--                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"-->
-                            <!--                           class="external-link button is-normal is-rounded is-dark">-->
-                            <!--                        <span class="icon">-->
-                            <!--                          <i class="fas fa-file-pdf"></i>-->
-                            <!--                        </span>-->
-                            <!--                        <span>Paper</span>-->
-                            <!--                      </a>-->
-                            <!--                    </span>-->
+<!--                             Arxiv PDF link -->
+<!--                                                        <span class="link-block">-->
+<!--                                                    <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"-->
+<!--                                                       class="external-link button is-normal is-rounded is-dark">-->
+<!--                                                    <span class="icon">-->
+<!--                                                      <i class="fas fa-file-pdf"></i>-->
+<!--                                                    </span>-->
+<!--                                                    <span>Paper</span>-->
+<!--                                                  </a>-->
+<!--                                                </span>-->
 
-                            <!--                            &lt;!&ndash; Supplementary PDF link &ndash;&gt;-->
-                            <!--                            <span class="link-block">-->
-                            <!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
-                            <!--                         class="external-link button is-normal is-rounded is-dark">-->
-                            <!--                      <span class="icon">-->
-                            <!--                        <i class="fas fa-file-pdf"></i>-->
-                            <!--                      </span>-->
-                            <!--                      <span>Supplementary</span>-->
-                            <!--                    </a>-->
-                            <!--                  </span>-->
+<!--                                                        &lt;!&ndash; Supplementary PDF link &ndash;&gt;-->
+<!--                                                        <span class="link-block">-->
+<!--                                                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+<!--                                                     class="external-link button is-normal is-rounded is-dark">-->
+<!--                                                  <span class="icon">-->
+<!--                                                    <i class="fas fa-file-pdf"></i>-->
+<!--                                                  </span>-->
+<!--                                                  <span>Supplementary</span>-->
+<!--                                                </a>-->
+<!--                                              </span>-->
 
-                            <!-- Github link -->
-                            <span class="link-block">
+<!--                             Github link -->
+                    <span class="link-block">
                     <a href="https://github.com/ldtho/DifFUSER" target="_blank"
                        class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -116,7 +116,7 @@
 
                             <!-- ArXiv abstract Link -->
                             <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2404.04629" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -137,19 +137,19 @@
     <div class="hero-body">
         <div class="container">
             <!-- Paper video. -->
-                <div class="item item-video1">
-                    <video poster="" id="video" autoplay controls muted loop height="100%">
-                        <!-- Your video file here -->
-                        <source src="static/videos/output2.mp4"
-                                type="video/mp4">
-                    </video>
+            <div class="item item-video1">
+                <video poster="" id="video" autoplay controls muted loop height="100%">
+                    <!-- Your video file here -->
+                    <source src="static/videos/output2.mp4"
+                            type="video/mp4">
+                </video>
+            </div>
+            <div class="columns is-centered">
+                <!-- Wrap the text inside a .column and potentially use .has-text-centered for text alignment -->
+                <div class="column has-text-centered">
+                    Qualitative results of our DifFUSER on the NuScenes dataset.
                 </div>
-                <div class="columns is-centered">
-                    <!-- Wrap the text inside a .column and potentially use .has-text-centered for text alignment -->
-                    <div class="column has-text-centered">
-                        Qualitative results of our DifFUSER on the NuScenes dataset.
-                    </div>
-                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -161,7 +161,8 @@
     <div class="container is-max-desktop">
         <div class="hero-body has-text-centered"> <!-- Add has-text-centered here to center all text within -->
             <figure class="image is-inline-block"> <!-- Wrap your image in a figure for better alignment -->
-                <img src="static/images/thumbnail.png" style="display:block; margin:auto;"> <!-- Ensure the image is centered -->
+                <img src="static/images/thumbnail.png" style="display:block; margin:auto;">
+                <!-- Ensure the image is centered -->
             </figure>
             <h3 class="title is-3" style="margin-top: 20px;"> <!-- Additional styles for spacing and alignment -->
                 We propose to formulate multi-modal fusion as a denoising diffusion process from
@@ -245,8 +246,6 @@
 <!-- End image carousel -->
 
 
-
-
 <!--&lt;!&ndash; Video carousel &ndash;&gt;-->
 <!--<section class="hero is-small">-->
 <!--    <div class="hero-body">-->
@@ -300,7 +299,16 @@
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>BibTex Code Here</code></pre>
+        <pre><code>
+@misc{le2024diffuser,
+title={DifFUSER: Diffusion Model for Robust Multi-Sensor Fusion in 3D Object Detection and BEV Segmentation},
+author={Duy-Tho Le and Hengcan Shi and Jianfei Cai and Hamid Rezatofighi},
+year={2024},
+eprint={2404.04629},
+archivePrefix={arXiv},
+primaryClass={cs.CV}
+}
+        </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -335,17 +343,21 @@
 
 <!-- Default Statcounter code for DifFUSER https://ldtho.github.io/DifFUSER/ -->
 <script type="text/javascript">
-var sc_project=12985919;
-var sc_invisible=0;
-var sc_security="da7fa90e";
-var scJsHost = "https://";
-document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
+    var sc_project = 12985919;
+    var sc_invisible = 0;
+    var sc_security = "da7fa90e";
+    var scJsHost = "https://";
+    document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+        "statcounter.com/counter/counter.js'></" + "script>");
 </script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12985919/0/da7fa90e/0/" alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<noscript>
+    <div class="statcounter"><a title="Web Analytics"
+                                href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                                                                                     src="https://c.statcounter.com/12985919/0/da7fa90e/0/"
+                                                                                     alt="Web Analytics"
+                                                                                     referrerPolicy="no-referrer-when-downgrade"></a>
+    </div>
+</noscript>
 <!-- End of Statcounter Code -->
 <!-- End of Statcounter Code -->
 
