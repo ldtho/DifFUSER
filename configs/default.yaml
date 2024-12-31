@@ -1,0 +1,26 @@
+seed: 1610
+deterministic: false
+checkpoint_config:
+  interval: 1
+  max_keep_ckpts: 10
+
+log_config:
+  interval: 50
+  hooks:
+    -
+      type: TextLoggerHook
+    -
+      type: TensorboardLoggerHook
+
+load_from: null
+resume_from: null
+
+cudnn_benchmark: false
+fp16:
+  loss_scale:
+    growth_interval: 10000 #20000 #10000 #2000 #16000
+
+max_epochs: 20
+runner:
+  type: CustomEpochBasedRunner
+  max_epochs: ${max_epochs}

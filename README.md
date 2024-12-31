@@ -5,13 +5,11 @@ This repository contains the official implementation of the paper "DifFUSER: Dif
 
 ![DifFUSER](static/thumbnail.png)
 
-
-
-
 ## News
 
-- [2024/10] Code will be released soon.
-- [2024/03] DifFUSER is accepted by ECCV 2024!!
+- [2024/12] Code release: Inferece, Diffusion sampling, Pretrained model.
+- [2024/10] DifFUSER is presented at ECCV 2024.
+- [2024/07] DifFUSER is accepted by ECCV 2024.
 
 
 
@@ -29,11 +27,14 @@ Diffusion models have recently gained prominence as powerful deep generative mod
 ```html
 git clone https://github.com/ldtho/DifFUSER.git
 cd DifFUSER
-conda create difFUSER python=3.9
+conda create -n difFUSER python=3.9
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 conda install cudatoolkit-dev ninja cuda-nvcc=11.3 numba cudnn fvcore libclang cmake lit gcc openmpi==4.0.4 tqdm pillow=8.4 timm setuptools=59.5 -c conda-forge -c nvidia -y
 pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
 pip install nuscenes-devkit pyquaternion mmdet==2.20.0 torchpack==0.3.1 spconv-cu113 mpi4py==3.0.3 numpy==1.23 setuptools==59.5.0 wandb
+export CC=/usr/bin/gcc-10
+export CXX=/usr/bin/g++-10
+export CUDA_HOME=~/miniconda3/envs/difFUSER/pkgs/cuda-toolkit
 python setup.py develop
 ```
 
@@ -66,7 +67,7 @@ mmdetection3d
 We also provide instructions for evaluating our pretrained models. Please download the checkpoints using the following script: 
     
 ```html
-bash tools/scripts/download_pretrained_models.sh
+bash tools/scripts/download_pretrained.sh
 ```
 
 For **BEV Segmentation**, you will be able to run:
@@ -76,10 +77,13 @@ torchpack dist-run -np [number of gpus] python tools/test.py [config file path] 
 
 # Example
 
-torchpack dist-run -np 8 python tools/test.py configs/nuscenes/seg/diffuser-seg.yaml pretrained/DifFUSER-seg.pth --eval map
+torchpack dist-run -np 8 python tools/test.py configs/nuscenes/seg/diffuser.yaml pretrained/DifFUSER-seg.pth --eval map
 ```
 
-For citation:
+#### Sample results
+
+
+### Citation:
 
 ```html
 @inproceedings{lediffusion,
